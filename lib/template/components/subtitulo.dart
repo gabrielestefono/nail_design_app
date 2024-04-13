@@ -10,7 +10,6 @@ class SubTitulo extends StatelessWidget {
       texto,
       style: const TextStyle(
         color: Colors.white,
-        fontFamily: 'Raleway',
         fontSize: 25,
         fontVariations: [
           FontVariation('wght', 600),

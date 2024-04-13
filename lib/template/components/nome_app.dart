@@ -10,7 +10,6 @@ class NomeApp extends StatelessWidget {
       texto,
       style: const TextStyle(
         color: Colors.white,
-        fontFamily: 'Raleway',
         fontSize: 55,
         fontVariations: [
           FontVariation('wght', 500),

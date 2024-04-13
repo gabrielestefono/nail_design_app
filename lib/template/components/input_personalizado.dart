@@ -30,7 +30,6 @@ class InputPersonalizado extends StatelessWidget {
             ),
             style: const TextStyle(
               color: Colors.white,
-              fontFamily: 'Raleway',
               fontSize: 20,
               fontVariations: [
                 FontVariation('wght', 400),

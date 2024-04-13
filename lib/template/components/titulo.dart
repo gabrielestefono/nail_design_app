@@ -10,7 +10,6 @@ class Titulo extends StatelessWidget {
       texto,
       style: const TextStyle(
         color: Colors.white,
-        fontFamily: 'Raleway',
         fontSize: 40,
         fontVariations: [
           FontVariation('wght', 600),

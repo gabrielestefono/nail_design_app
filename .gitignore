@@ -41,3 +41,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Tela nada a ver que criei
+
+/lib/pages/outra_tela.dart
