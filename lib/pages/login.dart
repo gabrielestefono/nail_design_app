@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nail_app/template/components/subtitulo.dart';
 import 'package:nail_app/template/components/titulo.dart';
 
 class Login extends StatelessWidget {
@@ -24,7 +25,6 @@ class Login extends StatelessWidget {
                   label: Text("Senha"),
                 ),
               ),
-              Titulo(texto: "Bem-vinda, Maria!")
             ],
           ),
         )
