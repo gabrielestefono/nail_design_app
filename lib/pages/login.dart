@@ -1,32 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:nail_app/template/components/botao_grande.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const Text("Open Nails"),
-        const Text("Vamos à sua casa"),
+        Text("Open Nails"),
+        Text("Vamos à sua casa"),
         Form(
           child: Column(
             children: [
-              const TextField(
+              TextField(
                 decoration: InputDecoration(
                   label: Text("Email"),
                 ),
               ),
-              const TextField(
+              TextField(
                 obscureText: true,
                 decoration: InputDecoration(
                   label: Text("Senha"),
                 ),
               ),
-              ElevatedButton(
-                child: const Text("Login"),
-                onPressed: () => {},
-              )
+              BotaoGrande(texto: 'Piedicure')
             ],
           ),
         )
