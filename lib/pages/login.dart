@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nail_app/template/components/input_personalizado.dart';
+import 'package:nail_app/template/components/nome_app.dart';
 import 'package:nail_app/template/components/subtitulo.dart';
-import 'package:nail_app/template/components/titulo.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -23,17 +23,17 @@ class Login extends StatelessWidget {
           // color: Colors.black.withOpacity(0.2), TODO: Remover isso quando pular pra próxima Página
           child: Column(
             children: [
-              Titulo(texto: "Open Nails"),
-              SubTitulo(texto: "Vamos à sua casa"),
+              const NomeApp(texto: "Open Nails"),
+              const SubTitulo(texto: "Vamos à sua casa"),
               Form(
                 child: Column(
                   children: [
-                    InputPersonalizado(
+                    const InputPersonalizado(
                       texto: "Email",
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 20),
-                      child: InputPersonalizado(
+                      margin: const EdgeInsets.only(top: 20),
+                      child: const InputPersonalizado(
                         texto: "Senha",
                         senha: true,
                       ),
