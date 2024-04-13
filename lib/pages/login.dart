@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nail_app/template/components/subtitulo.dart';
-import 'package:nail_app/template/components/titulo.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
