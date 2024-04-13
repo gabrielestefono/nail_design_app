@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nail_app/template/components/botao_grande.dart';
+import 'package:nail_app/template/components/botao_pequeno.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -24,7 +25,10 @@ class Login extends StatelessWidget {
                   label: Text("Senha"),
                 ),
               ),
-              BotaoGrande(texto: 'Piedicure')
+              BotaoPequeno(
+                texto: 'Iniciar',
+                secundario: true,
+              )
             ],
           ),
         )
