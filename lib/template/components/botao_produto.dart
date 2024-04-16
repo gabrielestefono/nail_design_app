@@ -12,6 +12,7 @@ class BotaoProduto extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () => {},
         style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.transparent),
           elevation: MaterialStateProperty.all(0),
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
