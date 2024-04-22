@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nail_app/components/custom_app_bar.dart';
-import 'package:nail_app/pages/funcionarios.dart';
+import 'package:nail_app/pages/funcionario.dart';
 import 'package:nail_app/pages/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nail_app/template/components/custom_navigation_bar.dart';
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: titulo != null ? CustomAppBar(titulo: titulo!) : null,
-        body: logado ? const Funcionarios() : const Login(),
+        body: logado ? const Funcionario() : const Login(),
         bottomNavigationBar: logado ? const CustomNavigationBar() : null,
       ),
     );
