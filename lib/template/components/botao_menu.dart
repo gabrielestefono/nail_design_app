@@ -15,10 +15,10 @@ class BotaoMenu extends StatelessWidget {
         height: 58,
         child: ElevatedButton(
           style: ButtonStyle(
-            padding: MaterialStateProperty.all(EdgeInsets.zero),
-            backgroundColor: MaterialStateProperty.all(Colors.transparent),
-            shadowColor: MaterialStateProperty.all(Colors.transparent),
-            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            padding: WidgetStateProperty.all(EdgeInsets.zero),
+            backgroundColor: WidgetStateProperty.all(Colors.transparent),
+            shadowColor: WidgetStateProperty.all(Colors.transparent),
+            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0.0),
                 side: const BorderSide(color: Colors.transparent),

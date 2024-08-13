@@ -22,19 +22,23 @@ class ClassificacaoFuncionario extends StatelessWidget {
           children: [
             const Text(
               "Fulana 1",
-              style: TextStyle(color: Colors.white, fontSize: 20, fontVariations: [
+              style:
+                  TextStyle(color: Colors.white, fontSize: 20, fontVariations: [
                 FontVariation('wght', 500),
               ]),
             ),
             const Text(
               "2 Anos de Experiência",
-              style: TextStyle(color: Colors.white, fontSize: 14, fontVariations: [
+              style:
+                  TextStyle(color: Colors.white, fontSize: 14, fontVariations: [
                 FontVariation('wght', 500),
               ]),
             ),
             Row(
               children: arrayEstrelas.map((estrela) {
-                return estrela ? Image.network('assets/icons/star.png') : Image.network('assets/icons/star_empty.png');
+                return estrela
+                    ? Image.network('assets/icons/star.png')
+                    : Image.network('assets/icons/star_empty.png');
               }).toList(),
             )
           ],
@@ -48,15 +52,15 @@ class ClassificacaoFuncionario extends StatelessWidget {
             height: 30,
             child: ElevatedButton(
               style: ButtonStyle(
-                padding: MaterialStateProperty.all(EdgeInsets.zero),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                padding: WidgetStateProperty.all(EdgeInsets.zero),
+                shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(0.0),
                     side: const BorderSide(color: Colors.transparent),
                   ),
                 ),
-                backgroundColor: MaterialStateProperty.all(Colors.transparent),
-                shadowColor: MaterialStateProperty.all(Colors.transparent),
+                backgroundColor: WidgetStateProperty.all(Colors.transparent),
+                shadowColor: WidgetStateProperty.all(Colors.transparent),
               ),
               onPressed: () => {},
               child: Row(

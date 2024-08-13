@@ -12,14 +12,14 @@ class BotaoProduto extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () => {},
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.transparent),
-          elevation: MaterialStateProperty.all(0),
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          backgroundColor: WidgetStateProperty.all(Colors.transparent),
+          elevation: WidgetStateProperty.all(0),
+          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),
           ),
-          padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+          padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
             EdgeInsets.zero,
           ),
         ),

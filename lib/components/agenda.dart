@@ -44,7 +44,7 @@ class Agenda extends StatelessWidget {
                     children: [
                       ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
+                          backgroundColor: WidgetStateProperty.all<Color>(
                             const Color(0XFF8E8870),
                           ),
                         ),
@@ -58,7 +58,7 @@ class Agenda extends StatelessWidget {
                       ),
                       ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
+                          backgroundColor: WidgetStateProperty.all<Color>(
                             const Color(0XFF8E8870),
                           ),
                         ),
@@ -90,16 +90,16 @@ class Agenda extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: ElevatedButton(
         style: ButtonStyle(
-            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0.0),
                 side: const BorderSide(color: Colors.transparent),
               ),
             ),
-            backgroundColor: MaterialStateProperty.all(
+            backgroundColor: WidgetStateProperty.all(
               Colors.transparent,
             ),
-            shadowColor: MaterialStateProperty.all(
+            shadowColor: WidgetStateProperty.all(
               Colors.transparent,
             )),
         onPressed: () => _showDialog(context),

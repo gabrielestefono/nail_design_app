@@ -12,14 +12,16 @@ class BotaoPequeno extends StatelessWidget {
       height: 42,
       child: ElevatedButton(
         style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(
+            backgroundColor: WidgetStateProperty.all<Color>(
               secundario ? const Color(0XFF3A2E26) : const Color(0xFF8E8870),
             ),
-            shape: MaterialStateProperty.all<OutlinedBorder>(
+            shape: WidgetStateProperty.all<OutlinedBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
                 side: BorderSide(
-                  color: secundario ? const Color(0XFF3A2E26) : const Color(0XFFDFC6A3),
+                  color: secundario
+                      ? const Color(0XFF3A2E26)
+                      : const Color(0XFFDFC6A3),
                   width: 1,
                 ),
               ),

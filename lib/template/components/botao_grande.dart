@@ -11,12 +11,12 @@ class BotaoGrande extends StatelessWidget {
       height: 45,
       child: ElevatedButton(
         style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(
+            backgroundColor: WidgetStateProperty.all<Color>(
               const Color(
                 0xFF8E8870,
               ),
             ),
-            shape: MaterialStateProperty.all<OutlinedBorder>(
+            shape: WidgetStateProperty.all<OutlinedBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
                 side: const BorderSide(
