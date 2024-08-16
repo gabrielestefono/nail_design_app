@@ -12,16 +12,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: AppBar(
           backgroundColor: const Color(0xFF8E8870),
           toolbarHeight: 116,
-          leading: Container(
-            margin: const EdgeInsets.only(top: 30),
-            child: BackButton(
-              onPressed: () => {},
-              color: Colors.white,
-            ),
+          leading: BackButton(
+            onPressed: () => {},
+            color: Colors.white,
           ),
           centerTitle: true,
-          title: Padding(
-            padding: const EdgeInsets.only(top: 50, bottom: 20),
+          title: SizedBox(
             child: Text(
               titulo,
               style: const TextStyle(color: Colors.white),

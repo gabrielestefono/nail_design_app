@@ -5,7 +5,9 @@ import 'package:nail_app/template/components/nome_app.dart';
 import 'package:nail_app/template/components/subtitulo.dart';
 
 class Login extends StatelessWidget {
-  const Login({super.key});
+  final VoidCallback onLogin;
+
+  const Login({super.key, required this.onLogin});
 
   @override
   Widget build(BuildContext context) {
@@ -24,12 +26,14 @@ class Login extends StatelessWidget {
           Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.12),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.12),
                 child: const NomeApp(texto: "Open Nails"),
               ),
               const SubTitulo(texto: "Vamos à sua casa"),
               Container(
-                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.38),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.38),
                 child: Form(
                   child: Column(
                     children: [
@@ -37,7 +41,8 @@ class Login extends StatelessWidget {
                         texto: "Email",
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.03),
+                        margin: EdgeInsets.only(
+                            top: MediaQuery.of(context).size.height * 0.03),
                         child: const InputPersonalizado(
                           texto: "Senha",
                           senha: true,
@@ -45,9 +50,13 @@ class Login extends StatelessWidget {
                       ),
                       Container(
                         width: MediaQuery.of(context).size.width * 0.8,
-                        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.06),
+                        margin: EdgeInsets.only(
+                            top: MediaQuery.of(context).size.height * 0.06),
                         alignment: Alignment.centerRight,
-                        child: const BotaoPequeno(texto: "Login"),
+                        child: BotaoPequeno(
+                          texto: "Login",
+                          callback: onLogin,
+                        ),
                       )
                     ],
                   ),

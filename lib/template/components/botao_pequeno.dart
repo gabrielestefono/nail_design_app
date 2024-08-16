@@ -3,7 +3,13 @@ import 'package:flutter/material.dart';
 class BotaoPequeno extends StatelessWidget {
   final bool secundario;
   final String texto;
-  const BotaoPequeno({super.key, required this.texto, this.secundario = false});
+  final VoidCallback callback;
+  const BotaoPequeno({
+    super.key,
+    required this.texto,
+    required this.callback,
+    this.secundario = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +32,7 @@ class BotaoPequeno extends StatelessWidget {
                 ),
               ),
             )),
-        onPressed: () => {},
+        onPressed: callback,
         child: Text(
           texto,
           style: const TextStyle(

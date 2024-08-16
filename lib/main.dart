@@ -6,15 +6,24 @@ import 'package:nail_app/pages/servicos.dart';
 import 'package:nail_app/template/components/custom_navigation_bar.dart';
 
 void main() {
-  runApp(const MyApp(
-    logado: true,
-  ));
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  final bool logado;
-  final String? titulo;
-  const MyApp({super.key, required this.logado, this.titulo});
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool logado = false;
+
+  void logar() {
+    setState(() {
+      logado = true;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +32,8 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.ralewayTextTheme(),
       ),
       home: Scaffold(
-        appBar: titulo != null ? CustomAppBar(titulo: titulo!) : null,
-        body: logado ? const Servicos() : const Login(),
+        appBar: logado ? const CustomAppBar(titulo: "Serviços") : null,
+        body: logado ? const Servicos() : Login(onLogin: logar),
         bottomNavigationBar: logado ? const CustomNavigationBar() : null,
       ),
     );

@@ -12,11 +12,11 @@ class Servicos extends StatelessWidget {
     return CustomScroll(
       children: [
         Container(
-          margin: const EdgeInsets.only(top: 60),
+          margin: const EdgeInsets.only(top: 60, left: 20),
           child: const SubTitulo(texto: "Bem vinda, Maria!"),
         ),
         Container(
-          margin: const EdgeInsets.only(top: 10),
+          margin: const EdgeInsets.only(top: 10, left: 20),
           child: const SubTitulo(texto: "Nossos Serviços"),
         ),
         Container(
