@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nail_app/pages/categoria.dart';
 import 'package:nail_app/template/components/botao_categoria.dart';
 import 'package:nail_app/template/components/botao_grande.dart';
 import 'package:nail_app/template/components/custom_scroll.dart';
@@ -27,7 +28,15 @@ class Servicos extends StatelessWidget {
         Container(
           margin: const EdgeInsets.only(top: 24),
           alignment: Alignment.center,
-          child: const BotaoGrande(texto: "Manicure"),
+          child: BotaoGrande(
+            texto: "Manicure",
+            callback: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Categoria(),
+              ),
+            ),
+          ),
         ),
         Container(
           margin: const EdgeInsets.only(top: 32),
@@ -37,7 +46,15 @@ class Servicos extends StatelessWidget {
         Container(
           margin: const EdgeInsets.only(top: 24, bottom: 100),
           alignment: Alignment.center,
-          child: const BotaoGrande(texto: "Pedicure"),
+          child: BotaoGrande(
+            texto: "Pedicure",
+            callback: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Categoria(),
+              ),
+            ),
+          ),
         ),
       ],
     );

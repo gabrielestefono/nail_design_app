@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class BotaoGrande extends StatelessWidget {
   final String texto;
-  const BotaoGrande({super.key, required this.texto});
+  final VoidCallback callback;
+  const BotaoGrande({super.key, required this.texto, required this.callback});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class BotaoGrande extends StatelessWidget {
                 ),
               ),
             )),
-        onPressed: () => {},
+        onPressed: callback,
         child: Text(
           texto,
           style: const TextStyle(

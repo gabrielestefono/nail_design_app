@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nail_app/pages/produto.dart';
 import 'package:nail_app/template/components/botao_grande.dart';
 import 'package:nail_app/template/components/custom_scroll.dart';
 import 'package:nail_app/template/components/titulo.dart';
@@ -18,24 +19,42 @@ class Categoria extends StatelessWidget {
         Container(
           alignment: Alignment.center,
           margin: const EdgeInsets.only(top: 88),
-          child: const BotaoGrande(
+          child: BotaoGrande(
             texto: "Acrílicas",
+            callback: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Produto(),
+              ),
+            ),
           ),
         ),
         Container(
           alignment: Alignment.center,
           width: MediaQuery.of(context).size.width * 0.8,
           margin: const EdgeInsets.only(top: 50),
-          child: const BotaoGrande(
-            texto: "Semi Permanente ",
+          child: BotaoGrande(
+            texto: "Semi Permanente",
+            callback: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Produto(),
+              ),
+            ),
           ),
         ),
         Container(
           alignment: Alignment.center,
           width: MediaQuery.of(context).size.width * 0.8,
           margin: const EdgeInsets.only(top: 50),
-          child: const BotaoGrande(
-            texto: "Pintado normal",
+          child: BotaoGrande(
+            texto: "Pintado Normal",
+            callback: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Produto(),
+              ),
+            ),
           ),
         )
       ],
